@@ -1,0 +1,50 @@
+name: Feature request
+description: Suggest a feature for Win7 Simu
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: 1. Request type
+      description: Is this a request for a new program or an enhancement for an existing program?
+      options:
+        - Request for a new program
+        - Enhance existing program
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: program
+    attributes:
+      label: 2. Which program to enhance?
+      description: Specify which program you want to enhance with the suggested feature
+      options:
+        - Calculator
+        - Camera
+        - Chrome
+        - Command Prompt
+        - Games
+        - Internet Explorer
+        - Magnifier
+        - Media Center
+        - Media player
+        - Notepad
+        - Paint
+        - Sound recorder
+        - Snipping tool
+        - Sticky notes
+        - Theme Studio
+        - Wordpad
+        - Other
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: program-other
+    attributes:
+      label: 2.1. Specify the program if you select "Other" for the above question
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature
+      description: Please describe the feature in detail, how you want it to be implemented in Win7 Simu
