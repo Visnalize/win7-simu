@@ -1,0 +1,45 @@
+name: Bug report
+description: Report an issue to help us improve
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Android or Web
+      description: Does this issue occur on the Android or Web version of Win7 Simu?
+      options:
+        - Android
+        - Web
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduce steps
+      description: Please provide the steps to reproduce the issue
+      placeholder: |
+        - Open X
+        - Click on Y
+        - Expect Z to be there
+    validations:
+      required: true
+  - type: textarea
+    id: specs
+    attributes:
+      label: Browser or device specs
+      description: Please provide the specs of your environment (web browser or device) to help facilitate the reproduction
+      placeholder: |
+        For Android:
+        - Device model: e.g. Redmi 8A, Samsung J6+
+        - Android version: e.g. 8, 10, 12
+        For Web:
+        - Browser: e.g. Chrome, Firefox
+    validations:
+      required: true
+  - type: input
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: If possible, please include a link to your screenshot with the issue occurring to explain it visually
+      placeholder: e.g. https://imgur.com/screenshot-of-the-issue.png
