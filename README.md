@@ -1,6 +1,3 @@
-> [!NOTE]
-> Due to excessive spam, interaction with this repo has been restricted. If you cannot create new issues, please come back after 24 hours.
-
 <div align="center">
   <img src="https://play-lh.googleusercontent.com/hhIHRXxOzAzFb6leGaZ-GZ9SvXe21dfYNLMtTJP-YbiCIqWCr383lQQwjKjbJBrgtNk=s128-rw" alt="Win7 Simu logo" />
 </div>
