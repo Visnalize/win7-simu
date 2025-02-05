@@ -37,9 +37,8 @@ body:
         - Browser: e.g. Chrome, Firefox
     validations:
       required: true
-  - type: input
-    id: screenshot
+  - type: textarea
+    id: screenshots
     attributes:
-      label: Screenshot
-      description: If possible, please include a link to your screenshot with the issue occurring to explain it visually
-      placeholder: e.g. https://imgur.com/screenshot-of-the-issue.png
+      label: Screenshots
+      description: If possible, please include links to the screenshots, or upload them below to explain the issue visually
