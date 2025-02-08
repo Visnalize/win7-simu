@@ -13,6 +13,14 @@ body:
       default: 0
     validations:
       required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Which app version does the issue occur for you?
+      placeholder: ex: 2.1.0
+    validations:
+      required: true
   - type: textarea
     id: reproduce
     attributes:
