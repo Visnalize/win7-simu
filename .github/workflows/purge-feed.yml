@@ -1,0 +1,21 @@
+name: Purge notification feed
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "news/feed.json"
+
+jobs:
+  purge:
+    name: Clear the CDN cache
+    runs-on: ubuntu-latest
+    # jsDelivr caches a branch path for twelve hours, which is too long for a message that is
+    # published by editing a file. Purging makes an edit live within a couple of minutes.
+    steps:
+      - name: Purge jsDelivr
+        run: |
+          curl --fail --silent --show-error \
+            "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/news/feed.json"
