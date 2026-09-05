@@ -28,12 +28,19 @@ jobs:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
       - name: Check the author can publish
-        # Anyone can open an issue, so only an owner, member or collaborator gets to write to the
+        # Anyone can open an issue, so only someone who can push to the repo gets to write to the
         # feed. workflow_dispatch is already limited to people with write access.
+        #
+        # This asks for the author's real permission rather than reading author_association, which
+        # reports CONTRIBUTOR for a maintainer whose organisation membership is private.
         if: github.event_name == 'issues'
+        env:
+          AUTHOR: ${{ github.event.issue.user.login }}
         run: |
-          case "${{ github.event.issue.author_association }}" in
-            OWNER|MEMBER|COLLABORATOR) ;;
+          permission="$(gh api "repos/$GITHUB_REPOSITORY/collaborators/$AUTHOR/permission" --jq .permission || echo none)"
+          echo "$AUTHOR has $permission permission"
+          case "$permission" in
+            admin|maintain|write) ;;
             *)
               gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" \
                 --body "Only maintainers can publish notifications, so this issue was left alone."
