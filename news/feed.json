@@ -1,1 +1,57 @@
-[]
+[
+  {
+    "id": "workflow-test-2026-09",
+    "type": "success",
+    "title": {
+      "en": "New theme",
+      "ar": "سمة جديدة",
+      "bn": "নতুন থিম",
+      "ca": "Nou tema",
+      "de": "Neues Design",
+      "es": "Nuevo tema",
+      "fa": "پوسته جدید",
+      "fr": "Nouveau thème",
+      "hi": "नई थीम",
+      "id": "Tema baru",
+      "it": "Nuovo tema",
+      "ja": "新しいテーマ",
+      "pl": "Nowy motyw",
+      "pt": "Novo tema",
+      "ru": "Новая тема",
+      "th": "ธีมใหม่",
+      "tr": "Yeni tema",
+      "uk": "Нова тема",
+      "vi": "Chủ đề mới",
+      "zh-CN": "新主题",
+      "zh-TW": "新佈景主題"
+    },
+    "body": {
+      "en": "The Windows XP theme is out. [See it](https://visnalize.com).",
+      "ar": "سمة Windows XP متاحة الآن. [شاهدها](https://visnalize.com).",
+      "bn": "Windows XP থিম এসে গেছে। [দেখে নিন](https://visnalize.com)।",
+      "ca": "El tema de Windows XP ja està disponible. [Mira'l](https://visnalize.com).",
+      "de": "Das Windows XP-Design ist da. [Ansehen](https://visnalize.com).",
+      "es": "El tema de Windows XP ya está disponible. [Verlo](https://visnalize.com).",
+      "fa": "پوسته Windows XP منتشر شد. [ببینید](https://visnalize.com).",
+      "fr": "Le thème Windows XP est disponible. [Le découvrir](https://visnalize.com).",
+      "hi": "Windows XP थीम आ गई है। [इसे देखें](https://visnalize.com)।",
+      "id": "Tema Windows XP sudah tersedia. [Lihat](https://visnalize.com).",
+      "it": "Il tema Windows XP è disponibile. [Guardalo](https://visnalize.com).",
+      "ja": "Windows XP テーマが登場しました。[見てみる](https://visnalize.com)。",
+      "pl": "Motyw Windows XP jest już dostępny. [Zobacz](https://visnalize.com).",
+      "pt": "O tema Windows XP já está disponível. [Veja](https://visnalize.com).",
+      "ru": "Тема Windows XP уже доступна. [Посмотреть](https://visnalize.com).",
+      "th": "ธีม Windows XP มาแล้ว [ดูเลย](https://visnalize.com)",
+      "tr": "Windows XP teması yayında. [Göz atın](https://visnalize.com).",
+      "uk": "Тема Windows XP уже доступна. [Переглянути](https://visnalize.com).",
+      "vi": "Chủ đề Windows XP đã có mặt. [Xem ngay](https://visnalize.com).",
+      "zh-CN": "Windows XP 主题已上线。[去看看](https://visnalize.com)。",
+      "zh-TW": "Windows XP 佈景主題已推出。[去看看](https://visnalize.com)。"
+    },
+    "from": "2026-09-01",
+    "to": "2026-09-30",
+    "target": {
+      "minVersion": "999.0.0"
+    }
+  }
+]
