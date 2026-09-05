@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "id": "workflow-test-2026-09b",
+    "type": "warning",
+    "title": {
+      "en": "Scheduled maintenance",
+      "ar": "صيانة مجدولة",
+      "bn": "নির্ধারিত রক্ষণাবেক্ষণ",
+      "ca": "Manteniment programat",
+      "de": "Geplante Wartung",
+      "es": "Mantenimiento programado",
+      "fa": "تعمیرات برنامه‌ریزی‌شده",
+      "fr": "Maintenance planifiée",
+      "hi": "निर्धारित रखरखाव",
+      "id": "Pemeliharaan terjadwal",
+      "it": "Manutenzione programmata",
+      "ja": "メンテナンスのお知らせ",
+      "pl": "Zaplanowana konserwacja",
+      "pt": "Manutenção programada",
+      "ru": "Плановое обслуживание",
+      "th": "การบำรุงรักษาตามกำหนด",
+      "tr": "Planlı bakım",
+      "uk": "Планове обслуговування",
+      "vi": "Bảo trì theo lịch",
+      "zh-CN": "计划维护",
+      "zh-TW": "預定維護"
+    },
+    "body": {
+      "en": "The online features will be unavailable on Sunday for about two hours. See the [status page](https://visnalize.com) for details.",
+      "ar": "لن تتوفر الميزات عبر الإنترنت يوم الأحد لمدة ساعتين تقريبًا. اطّلع على [صفحة الحالة](https://visnalize.com) لمزيد من التفاصيل.",
+      "bn": "রবিবার প্রায় দুই ঘণ্টার জন্য অনলাইন ফিচারগুলো অনুপলব্ধ থাকবে। বিস্তারিত জানতে [স্ট্যাটাস পেজ](https://visnalize.com) দেখুন।",
+      "ca": "Les funcions en línia no estaran disponibles diumenge durant unes dues hores. Consulta la [pàgina d'estat](https://visnalize.com) per a més detalls.",
+      "de": "Die Online-Funktionen sind am Sonntag für etwa zwei Stunden nicht verfügbar. Details findest du auf der [Statusseite](https://visnalize.com).",
+      "es": "Las funciones en línea no estarán disponibles el domingo durante unas dos horas. Consulta la [página de estado](https://visnalize.com) para más detalles.",
+      "fa": "قابلیت‌های آنلاین روز یکشنبه حدود دو ساعت در دسترس نخواهند بود. برای جزئیات به [صفحه وضعیت](https://visnalize.com) سر بزنید.",
+      "fr": "Les fonctionnalités en ligne seront indisponibles dimanche pendant environ deux heures. Consultez la [page d'état](https://visnalize.com) pour plus de détails.",
+      "hi": "रविवार को लगभग दो घंटे तक ऑनलाइन सुविधाएँ उपलब्ध नहीं रहेंगी। विवरण के लिए [स्टेटस पेज](https://visnalize.com) देखें।",
+      "id": "Fitur online tidak akan tersedia pada hari Minggu selama sekitar dua jam. Lihat [halaman status](https://visnalize.com) untuk detailnya.",
+      "it": "Le funzioni online non saranno disponibili domenica per circa due ore. Consulta la [pagina di stato](https://visnalize.com) per i dettagli.",
+      "ja": "日曜日に約2時間、オンライン機能をご利用いただけません。詳しくは[ステータスページ](https://visnalize.com)をご覧ください。",
+      "pl": "Funkcje online będą niedostępne w niedzielę przez około dwie godziny. Szczegóły znajdziesz na [stronie stanu](https://visnalize.com).",
+      "pt": "Os recursos online ficarão indisponíveis no domingo por cerca de duas horas. Veja a [página de status](https://visnalize.com) para mais detalhes.",
+      "ru": "В воскресенье онлайн-функции будут недоступны около двух часов. Подробности — на [странице состояния](https://visnalize.com).",
+      "th": "ฟีเจอร์ออนไลน์จะใช้งานไม่ได้ในวันอาทิตย์ประมาณสองชั่วโมง ดูรายละเอียดได้ที่[หน้าสถานะ](https://visnalize.com)",
+      "tr": "Çevrimiçi özellikler pazar günü yaklaşık iki saat kullanılamayacak. Ayrıntılar için [durum sayfasına](https://visnalize.com) bakın.",
+      "uk": "У неділю онлайн-функції будуть недоступні близько двох годин. Деталі — на [сторінці стану](https://visnalize.com).",
+      "vi": "Các tính năng trực tuyến sẽ không khả dụng vào Chủ nhật trong khoảng hai giờ. Xem [trang trạng thái](https://visnalize.com) để biết chi tiết.",
+      "zh-CN": "周日在线功能将暂停约两小时。详情请查看[状态页面](https://visnalize.com)。",
+      "zh-TW": "週日線上功能將暫停約兩小時。詳情請見[狀態頁面](https://visnalize.com)。"
+    },
+    "target": {
+      "platform": [
+        "web"
+      ],
+      "minVersion": "999.0.0"
+    }
+  }
+]
