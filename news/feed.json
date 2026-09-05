@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "id": "workflow-test-2026-09c",
+    "type": "success",
+    "title": {
+      "en": "New release coming soon",
+      "ar": "إصدار جديد قريبًا",
+      "bn": "নতুন রিলিজ শীঘ্রই আসছে",
+      "ca": "Nova versió molt aviat",
+      "de": "Neue Version kommt bald",
+      "es": "Nueva versión muy pronto",
+      "fa": "نسخه جدید به‌زودی",
+      "fr": "Nouvelle version bientôt disponible",
+      "hi": "नया रिलीज़ जल्द आ रहा है",
+      "id": "Rilis baru segera hadir",
+      "it": "Nuova versione in arrivo",
+      "ja": "新バージョンがまもなく登場",
+      "pl": "Nowa wersja już wkrótce",
+      "pt": "Nova versão em breve",
+      "ru": "Новый релиз уже скоро",
+      "th": "เวอร์ชันใหม่กำลังจะมาเร็ว ๆ นี้",
+      "tr": "Yeni sürüm çok yakında",
+      "uk": "Новий реліз уже незабаром",
+      "vi": "Bản phát hành mới sắp ra mắt",
+      "zh-CN": "新版本即将发布",
+      "zh-TW": "新版本即將推出"
+    },
+    "body": {
+      "en": "A [new release](https://visnalize.com/) is coming soon after the long wait. Be ready!",
+      "ar": "بعد انتظار طويل، هناك [إصدار جديد](https://visnalize.com/) قادم قريبًا. كن مستعدًا!",
+      "bn": "দীর্ঘ অপেক্ষার পর একটি [নতুন রিলিজ](https://visnalize.com/) শীঘ্রই আসছে। প্রস্তুত থাকুন!",
+      "ca": "Després de la llarga espera, aviat arribarà una [nova versió](https://visnalize.com/). Prepara't!",
+      "de": "Nach langer Wartezeit kommt bald eine [neue Version](https://visnalize.com/). Sei bereit!",
+      "es": "Tras la larga espera, pronto llegará una [nueva versión](https://visnalize.com/). ¡Prepárate!",
+      "fa": "پس از انتظاری طولانی، به‌زودی یک [نسخه جدید](https://visnalize.com/) می‌آید. آماده باشید!",
+      "fr": "Après une longue attente, une [nouvelle version](https://visnalize.com/) arrive bientôt. Tenez-vous prêt !",
+      "hi": "लंबे इंतज़ार के बाद एक [नया रिलीज़](https://visnalize.com/) जल्द आ रहा है। तैयार रहें!",
+      "id": "Setelah penantian panjang, [rilis baru](https://visnalize.com/) segera hadir. Bersiaplah!",
+      "it": "Dopo la lunga attesa, sta per arrivare una [nuova versione](https://visnalize.com/). Tieniti pronto!",
+      "ja": "長らくお待たせしました。まもなく[新バージョン](https://visnalize.com/)が登場します。お楽しみに！",
+      "pl": "Po długim oczekiwaniu już wkrótce pojawi się [nowa wersja](https://visnalize.com/). Bądź gotowy!",
+      "pt": "Depois da longa espera, uma [nova versão](https://visnalize.com/) chega em breve. Prepare-se!",
+      "ru": "После долгого ожидания скоро выйдет [новый релиз](https://visnalize.com/). Будьте готовы!",
+      "th": "หลังจากรอมานาน [เวอร์ชันใหม่](https://visnalize.com/) กำลังจะมาเร็ว ๆ นี้ เตรียมตัวให้พร้อม!",
+      "tr": "Uzun bir bekleyişin ardından [yeni bir sürüm](https://visnalize.com/) çok yakında geliyor. Hazır ol!",
+      "uk": "Після довгого очікування незабаром вийде [новий реліз](https://visnalize.com/). Будьте напоготові!",
+      "vi": "Sau thời gian chờ đợi dài, một [bản phát hành mới](https://visnalize.com/) sắp ra mắt. Hãy sẵn sàng nhé!",
+      "zh-CN": "漫长的等待之后，[新版本](https://visnalize.com/)即将发布，敬请期待！",
+      "zh-TW": "經過漫長的等待，[新版本](https://visnalize.com/)即將推出，敬請期待！"
+    }
+  }
+]
