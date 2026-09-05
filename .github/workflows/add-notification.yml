@@ -69,7 +69,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add news/feed.json
-          git commit -m "feat: add notification ${{ steps.entry.outputs.id }}" -m "Closes #${{ env.ISSUE }}"
+          # "Refs", not "Closes" — GitHub would close the issue the moment this commit lands and
+          # the step below would then have nothing left to close.
+          git commit -m "feat: add notification ${{ steps.entry.outputs.id }}" -m "Refs #${{ env.ISSUE }}"
           git push
 
       - name: Close the issue
