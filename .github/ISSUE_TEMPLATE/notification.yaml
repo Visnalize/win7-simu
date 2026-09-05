@@ -1,0 +1,123 @@
+name: Notification
+description: Publish an entry to the in-app notification feed
+title: "[Notification] "
+labels: ["notification"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For maintainers only. Opening this issue adds an entry to `news/feed.json`
+        and translates the title and body into every supported locale.
+  - type: input
+    id: entry-id
+    attributes:
+      label: ID
+      description: Lowercase letters, digits and dashes only. It must be unique and is never reused.
+      placeholder: winxp-theme-2026
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Which icon to show
+      options:
+        - success
+        - warning
+        - error
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Written in English. It is translated into every other locale for you.
+      placeholder: New theme
+    validations:
+      required: true
+  - type: textarea
+    id: body
+    attributes:
+      label: Body
+      description: >
+        Written in English markdown. Links open in the browser. Do not use `###` headings,
+        they conflict with the fields of this form.
+      placeholder: The Windows XP theme is out. [See it](https://visnalize.com).
+    validations:
+      required: true
+  - type: input
+    id: from
+    attributes:
+      label: Start date
+      description: ISO date the entry starts showing, inclusive. Leave empty to start right away.
+      placeholder: 2026-09-01
+  - type: input
+    id: to
+    attributes:
+      label: End date
+      description: ISO date the entry stops showing after, inclusive. Leave empty to never expire.
+      placeholder: 2026-09-30
+  - type: markdown
+    attributes:
+      value: |
+        ### Who sees it
+
+        Every rule you leave empty matches everyone.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platforms
+      multiple: true
+      options:
+        - web
+        - android
+  - type: input
+    id: min-version
+    attributes:
+      label: Minimum version
+      description: Inclusive. Devices on an older app version do not see the entry.
+      placeholder: 1.9.0
+  - type: input
+    id: max-version
+    attributes:
+      label: Maximum version
+      description: Inclusive. Devices on a newer app version do not see the entry.
+      placeholder: 2.1.0
+  - type: dropdown
+    id: locale
+    attributes:
+      label: Locales
+      description: A base code such as `vi` matches every region of it. `zh-CN` and `zh-TW` match only themselves.
+      multiple: true
+      options:
+        - ar
+        - bn
+        - ca
+        - de
+        - en
+        - es
+        - fa
+        - fr
+        - hi
+        - id
+        - it
+        - ja
+        - pl
+        - pt
+        - ru
+        - th
+        - tr
+        - uk
+        - vi
+        - zh-CN
+        - zh-TW
+  - type: dropdown
+    id: paid
+    attributes:
+      label: Purchases
+      options:
+        - Everyone
+        - Only devices that bought something
+        - Only devices that bought nothing
+      default: 0

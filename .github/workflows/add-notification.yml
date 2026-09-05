@@ -1,0 +1,77 @@
+name: Add notification
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: Number of the notification issue to publish
+        required: true
+
+# Two runs would rewrite news/feed.json from the same starting point and one of them would lose.
+concurrency:
+  group: notification-feed
+
+jobs:
+  publish:
+    name: Publish the entry
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'notification')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE: ${{ github.event.inputs.issue || github.event.issue.number }}
+      # Read here so the SDK install step can skip itself when the secret is not set.
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - name: Check the author can publish
+        # Anyone can open an issue, so only an owner, member or collaborator gets to write to the
+        # feed. workflow_dispatch is already limited to people with write access.
+        if: github.event_name == 'issues'
+        run: |
+          case "${{ github.event.issue.author_association }}" in
+            OWNER|MEMBER|COLLABORATOR) ;;
+            *)
+              gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" \
+                --body "Only maintainers can publish notifications, so this issue was left alone."
+              exit 1
+              ;;
+          esac
+
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Install the Anthropic SDK
+        if: env.ANTHROPIC_API_KEY != ''
+        run: npm install --no-save @anthropic-ai/sdk
+
+      - name: Build the entry
+        id: entry
+        run: |
+          ISSUE_BODY="$(gh issue view "$ISSUE" --repo "$GITHUB_REPOSITORY" --json body --jq .body)" \
+            node .github/scripts/add-notification.mjs
+
+      - name: Commit the feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news/feed.json
+          git commit -m "feat: add notification ${{ steps.entry.outputs.id }}" -m "Closes #${{ env.ISSUE }}"
+          git push
+
+      - name: Close the issue
+        run: |
+          gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY" --reason completed \
+            --comment "Published \`${{ steps.entry.outputs.id }}\` to \`news/feed.json\`, translated with ${{ steps.entry.outputs.translator }}. It goes live once the CDN cache is purged, which takes a couple of minutes."
+
+      - name: Report a failure on the issue
+        if: failure() && steps.entry.outcome == 'failure'
+        run: |
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" \
+            --body "The entry could not be published. See [the run log](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for the reason, then edit this issue and re-run the workflow."

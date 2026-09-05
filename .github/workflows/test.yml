@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/scripts/**"
+      - ".github/workflows/test.yml"
+  pull_request:
+    paths:
+      - ".github/scripts/**"
+      - ".github/workflows/test.yml"
+
+jobs:
+  test:
+    name: Run the script tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: node --test ".github/scripts/*.test.mjs"
