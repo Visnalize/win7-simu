@@ -51,13 +51,13 @@ body:
     attributes:
       label: Start date
       description: ISO date the entry starts showing, inclusive. Leave empty to start right away.
-      placeholder: 2026-09-01
+      placeholder: "2026-09-01"
   - type: input
     id: to
     attributes:
       label: End date
       description: ISO date the entry stops showing after, inclusive. Leave empty to never expire.
-      placeholder: 2026-09-30
+      placeholder: "2026-09-30"
   - type: markdown
     attributes:
       value: |
