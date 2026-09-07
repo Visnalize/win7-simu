@@ -212,5 +212,5 @@ export function updateFeed(feed, entry, now = today()) {
   if (feed.some((existing) => existing.id === entry.id)) fail(`The feed already has an entry with the id "${entry.id}".`);
 
   const kept = feed.filter((existing) => !existing.to || existing.to >= now);
-  return [...kept, entry].slice(-MAX_ENTRIES);
+  return [entry, ...kept].slice(-MAX_ENTRIES);
 }
