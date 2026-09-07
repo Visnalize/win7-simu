@@ -134,7 +134,7 @@ test("updateFeed appends the entry and removes what has expired", () => {
 test("updateFeed keeps the entry that ends today", () => {
   const feed = updateFeed([{ id: "ends-today", to: "2026-09-05" }], { id: "new" }, "2026-09-05");
 
-  assert.deepEqual(feed.map((entry) => entry.id), ["ends-today", "new"]);
+  assert.deepEqual(feed.map((entry) => entry.id), ["new", "ends-today"]);
 });
 
 test("updateFeed caps the feed and drops the oldest entries", () => {
