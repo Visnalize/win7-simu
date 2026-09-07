@@ -19,6 +19,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'notification')
     runs-on: ubuntu-latest
     permissions:
+      actions: write
       contents: write
       issues: write
     env:
@@ -73,6 +74,12 @@ jobs:
           # the step below would then have nothing left to close.
           git commit -m "feat: add notification ${{ steps.entry.outputs.id }}" -m "Refs #${{ env.ISSUE }}"
           git push
+
+      - name: Purge the CDN cache
+        # The push above is made with GITHUB_TOKEN, and such a push never starts another workflow
+        # run, so the push trigger in purge-feed.yml stays silent. workflow_dispatch is the one
+        # event GITHUB_TOKEN may still start, so ask for the purge by hand.
+        run: gh workflow run purge-feed.yml --repo "$GITHUB_REPOSITORY" --ref main
 
       - name: Close the issue
         run: |
