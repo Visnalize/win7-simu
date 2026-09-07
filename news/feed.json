@@ -48,5 +48,59 @@
       "zh-CN": "漫长的等待之后，[新版本](https://visnalize.com/)即将发布，敬请期待！",
       "zh-TW": "經過漫長的等待，[新版本](https://visnalize.com/)即將推出，敬請期待！"
     }
+  },
+  {
+    "id": "release-4-6-0",
+    "type": "success",
+    "title": {
+      "en": "New updates installed",
+      "ar": "تم تثبيت تحديثات جديدة",
+      "bn": "নতুন আপডেট ইনস্টল হয়েছে",
+      "ca": "Actualitzacions noves instal·lades",
+      "de": "Neue Updates installiert",
+      "es": "Nuevas actualizaciones instaladas",
+      "fa": "به‌روزرسانی‌های جدید نصب شد",
+      "fr": "Nouvelles mises à jour installées",
+      "hi": "नए अपडेट इंस्टॉल हुए",
+      "id": "Pembaruan baru terpasang",
+      "it": "Nuovi aggiornamenti installati",
+      "ja": "新しい更新プログラムをインストールしました",
+      "pl": "Zainstalowano nowe aktualizacje",
+      "pt": "Novas atualizações instaladas",
+      "ru": "Установлены новые обновления",
+      "th": "ติดตั้งอัปเดตใหม่แล้ว",
+      "tr": "Yeni güncellemeler yüklendi",
+      "uk": "Встановлено нові оновлення",
+      "vi": "Đã cài đặt bản cập nhật mới",
+      "zh-CN": "已安装新更新",
+      "zh-TW": "已安裝新更新"
+    },
+    "body": {
+      "en": "Congratulations! Win7 Simu has received new updates, you are on the latest version. Check out the [changelog](https://visnalize.com/win7simu/changelog) to see what's new.",
+      "ar": "تهانينا! حصل Win7 Simu على تحديثات جديدة، وأنت الآن على أحدث إصدار. اطّلع على [سجل التغييرات](https://visnalize.com/win7simu/changelog) لمعرفة الجديد.",
+      "bn": "অভিনন্দন! Win7 Simu নতুন আপডেট পেয়েছে, আপনি এখন সর্বশেষ সংস্করণে আছেন। নতুন কী আছে দেখতে [চেঞ্জলগ](https://visnalize.com/win7simu/changelog) দেখুন।",
+      "ca": "Enhorabona! Win7 Simu ha rebut actualitzacions noves i ja tens la darrera versió. Consulta el [registre de canvis](https://visnalize.com/win7simu/changelog) per veure les novetats.",
+      "de": "Glückwunsch! Win7 Simu hat neue Updates erhalten, du hast jetzt die neueste Version. Im [Änderungsprotokoll](https://visnalize.com/win7simu/changelog) siehst du, was neu ist.",
+      "es": "¡Enhorabuena! Win7 Simu ha recibido nuevas actualizaciones y ya tienes la última versión. Consulta el [registro de cambios](https://visnalize.com/win7simu/changelog) para ver las novedades.",
+      "fa": "تبریک! Win7 Simu به‌روزرسانی‌های جدیدی دریافت کرد و اکنون از آخرین نسخه استفاده می‌کنید. برای دیدن تغییرات، [فهرست تغییرات](https://visnalize.com/win7simu/changelog) را ببینید.",
+      "fr": "Félicitations ! Win7 Simu a reçu de nouvelles mises à jour, vous disposez de la dernière version. Consultez le [journal des modifications](https://visnalize.com/win7simu/changelog) pour voir les nouveautés.",
+      "hi": "बधाई हो! Win7 Simu को नए अपडेट मिले हैं, अब आप नवीनतम संस्करण पर हैं। क्या नया है यह देखने के लिए [चेंजलॉग](https://visnalize.com/win7simu/changelog) देखें।",
+      "id": "Selamat! Win7 Simu telah menerima pembaruan baru, Anda kini memakai versi terbaru. Lihat [catatan perubahan](https://visnalize.com/win7simu/changelog) untuk mengetahui apa yang baru.",
+      "it": "Congratulazioni! Win7 Simu ha ricevuto nuovi aggiornamenti, ora hai l'ultima versione. Consulta il [changelog](https://visnalize.com/win7simu/changelog) per scoprire le novità.",
+      "ja": "おめでとうございます！Win7 Simu に新しい更新が適用され、最新バージョンになりました。新機能は[変更履歴](https://visnalize.com/win7simu/changelog)でご確認ください。",
+      "pl": "Gratulacje! Win7 Simu otrzymał nowe aktualizacje — masz najnowszą wersję. Zajrzyj do [listy zmian](https://visnalize.com/win7simu/changelog), aby zobaczyć nowości.",
+      "pt": "Parabéns! O Win7 Simu recebeu novas atualizações e você já está na versão mais recente. Veja o [registro de alterações](https://visnalize.com/win7simu/changelog) para conferir as novidades.",
+      "ru": "Поздравляем! Win7 Simu получил новые обновления, у вас последняя версия. Загляните в [список изменений](https://visnalize.com/win7simu/changelog), чтобы узнать, что нового.",
+      "th": "ยินดีด้วย! Win7 Simu ได้รับอัปเดตใหม่แล้ว คุณกำลังใช้เวอร์ชันล่าสุด ดู[บันทึกการเปลี่ยนแปลง](https://visnalize.com/win7simu/changelog)เพื่อดูสิ่งใหม่ ๆ",
+      "tr": "Tebrikler! Win7 Simu yeni güncellemeler aldı, artık en son sürümü kullanıyorsunuz. Yenilikleri görmek için [değişiklik günlüğüne](https://visnalize.com/win7simu/changelog) göz atın.",
+      "uk": "Вітаємо! Win7 Simu отримав нові оновлення, у вас найновіша версія. Перегляньте [список змін](https://visnalize.com/win7simu/changelog), щоб дізнатися, що нового.",
+      "vi": "Chúc mừng! Win7 Simu đã nhận các bản cập nhật mới, bạn đang dùng phiên bản mới nhất. Xem [nhật ký thay đổi](https://visnalize.com/win7simu/changelog) để biết có gì mới.",
+      "zh-CN": "恭喜！Win7 Simu 已安装新更新，你现在使用的是最新版本。查看[更新日志](https://visnalize.com/win7simu/changelog)了解新增内容。",
+      "zh-TW": "恭喜！Win7 Simu 已安裝新更新，你目前使用的是最新版本。查看[更新日誌](https://visnalize.com/win7simu/changelog)以了解新增內容。"
+    },
+    "target": {
+      "minVersion": "4.6.0",
+      "maxVersion": "4.6.0"
+    }
   }
 ]
