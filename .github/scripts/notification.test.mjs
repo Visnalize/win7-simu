@@ -117,7 +117,7 @@ test("maskLinks numbers each link separately", () => {
   assert.equal(unmaskLinks(masked, urls), "[a](https://a.com) and [b](https://b.com)");
 });
 
-test("updateFeed appends the entry and removes what has expired", () => {
+test("updateFeed prepends the entry and removes what has expired", () => {
   const feed = [
     { id: "old", to: "2026-08-31" },
     { id: "current", to: "2026-09-30" },
@@ -125,9 +125,9 @@ test("updateFeed appends the entry and removes what has expired", () => {
   ];
 
   assert.deepEqual(updateFeed(feed, { id: "new" }, "2026-09-05"), [
+    { id: "new" },
     { id: "current", to: "2026-09-30" },
     { id: "forever" },
-    { id: "new" },
   ]);
 });
 
@@ -142,8 +142,8 @@ test("updateFeed caps the feed and drops the oldest entries", () => {
   const updated = updateFeed(feed, { id: "new" }, "2026-09-05");
 
   assert.equal(updated.length, MAX_ENTRIES);
-  assert.equal(updated[0].id, "entry-1");
-  assert.equal(updated.at(-1).id, "new");
+  assert.equal(updated[0].id, "new");
+  assert.equal(updated.at(-1).id, `entry-${MAX_ENTRIES - 2}`);
 });
 
 test("updateFeed refuses to reuse an id", () => {

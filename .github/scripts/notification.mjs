@@ -206,11 +206,13 @@ const today = () => new Date().toISOString().slice(0, 10);
 /**
  * Add the entry to the feed, drop what has expired and keep the feed short. A device remembers
  * only its last 50 ids, and dropping an entry also clears it from every action center.
+ *
+ * The newest entry comes first, so the cap drops the oldest from the end.
  */
 export function updateFeed(feed, entry, now = today()) {
   if (!Array.isArray(feed)) fail("news/feed.json must contain an array.");
   if (feed.some((existing) => existing.id === entry.id)) fail(`The feed already has an entry with the id "${entry.id}".`);
 
   const kept = feed.filter((existing) => !existing.to || existing.to >= now);
-  return [entry, ...kept].slice(-MAX_ENTRIES);
+  return [entry, ...kept].slice(0, MAX_ENTRIES);
 }
