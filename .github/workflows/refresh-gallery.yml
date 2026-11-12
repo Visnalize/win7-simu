@@ -1,0 +1,49 @@
+name: Refresh theme gallery
+
+on:
+  schedule:
+    # every six hours, off the hour, when GitHub's scheduler is least busy
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+
+# Two runs would commit snapshots of the same files from the same starting point.
+concurrency:
+  group: theme-gallery
+
+jobs:
+  refresh:
+    name: Rebuild the snapshots
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Read the databases
+        id: snapshot
+        run: node .github/scripts/refresh-gallery.mjs
+
+      - name: Commit the snapshots
+        if: steps.snapshot.outputs.files != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add themestudio
+          git commit -m "chore: refresh theme gallery"
+          git push
+
+      - name: Purge the CDN cache
+        # jsDelivr keeps a branch path for twelve hours, longer than the six between runs.
+        if: steps.snapshot.outputs.files != ''
+        env:
+          FILES: ${{ steps.snapshot.outputs.files }}
+        run: |
+          while IFS= read -r file; do
+            [ -n "$file" ] || continue
+            curl --fail --silent --show-error "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/$file"
+            echo
+          done <<< "$FILES"
