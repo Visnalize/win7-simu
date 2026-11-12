@@ -2,11 +2,9 @@ name: Refresh theme gallery
 
 on:
   schedule:
-    # every six hours, off the hour, when GitHub's scheduler is least busy
     - cron: "23 */6 * * *"
   workflow_dispatch:
 
-# Two runs would commit snapshots of the same files from the same starting point.
 concurrency:
   group: theme-gallery
 
@@ -37,7 +35,7 @@ jobs:
           git push
 
       - name: Purge the CDN cache
-        # jsDelivr keeps a branch path for twelve hours, longer than the six between runs.
+        # jsDelivr caches a branch for 12 hours, longer than the 6 between runs
         if: steps.snapshot.outputs.files != ''
         env:
           FILES: ${{ steps.snapshot.outputs.files }}

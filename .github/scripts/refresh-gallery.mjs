@@ -1,7 +1,3 @@
-// Entry point for the "Refresh theme gallery" workflow. Reads every published theme from each
-// Firebase project and rewrites themestudio/<project>.json when its themes changed. The paths it
-// wrote go to the step output `files`, one per line, for the workflow to purge from the CDN.
-//
 // Usage: node .github/scripts/refresh-gallery.mjs [project...]
 
 import { appendFile, mkdir, readFile, writeFile } from "node:fs/promises";
@@ -18,7 +14,7 @@ for (const project of projects) {
   const database = DATABASES[project];
   if (!database) throw new Error(`Unknown project: ${project}`);
 
-  // taken before the read, so a theme published while it runs is still newer than the snapshot
+  // before the read, so a theme published during it is still newer than the snapshot
   const generatedAt = Date.now();
   const response = await fetch(`${database}/themestudio/users.json`);
   if (!response.ok) throw new Error(`${project}: HTTP ${response.status} ${await response.text()}`);
@@ -36,7 +32,6 @@ for (const project of projects) {
   written.push(path);
 }
 
-// left unset when nothing was written, so the workflow skips the commit and the purge
 if (process.env.GITHUB_OUTPUT && written.length) {
   await appendFile(process.env.GITHUB_OUTPUT, `files<<EOF\n${written.join("\n")}\nEOF\n`);
 }
