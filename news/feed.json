@@ -1,5 +1,61 @@
 [
   {
+    "id": "brick-pals-intro",
+    "type": "success",
+    "title": {
+      "en": "Introducing Brick Pals",
+      "ar": "نقدّم لكم Brick Pals",
+      "bn": "পরিচয় করিয়ে দিচ্ছি Brick Pals",
+      "ca": "Us presentem Brick Pals",
+      "de": "Wir stellen vor: Brick Pals",
+      "es": "Te presentamos Brick Pals",
+      "fa": "معرفی Brick Pals",
+      "fr": "Voici Brick Pals",
+      "hi": "पेश है Brick Pals",
+      "id": "Memperkenalkan Brick Pals",
+      "it": "Ti presentiamo Brick Pals",
+      "ja": "Brick Pals のご紹介",
+      "pl": "Przedstawiamy Brick Pals",
+      "pt": "Apresentamos o Brick Pals",
+      "ru": "Представляем Brick Pals",
+      "th": "ขอแนะนำ Brick Pals",
+      "tr": "Karşınızda Brick Pals",
+      "uk": "Представляємо Brick Pals",
+      "vi": "Giới thiệu Brick Pals",
+      "zh-CN": "隆重推出 Brick Pals",
+      "zh-TW": "隆重推出 Brick Pals"
+    },
+    "body": {
+      "en": "Our latest creation to bring back your childhood memories, check out [Brick Pals](https://visnalize.com/brickpals), a tiny pixel pal to care, play with, and watch it grow right on your home screen.",
+      "ar": "إبداعنا الأحدث لإعادة ذكريات طفولتك، جرّب [Brick Pals](https://visnalize.com/brickpals)، رفيق بكسل صغير تعتني به وتلعب معه وتشاهده يكبر مباشرة على شاشتك الرئيسية.",
+      "bn": "আপনার শৈশবের স্মৃতি ফিরিয়ে আনতে আমাদের নতুন সৃষ্টি, দেখে নিন [Brick Pals](https://visnalize.com/brickpals) — ছোট্ট এক পিক্সেল সঙ্গী, যাকে আপনি যত্ন করবেন, খেলবেন এবং আপনার হোম স্ক্রিনেই বড় হতে দেখবেন।",
+      "ca": "La nostra creació més recent per retornar-te els records d'infantesa: descobreix [Brick Pals](https://visnalize.com/brickpals), un petit company de píxels per cuidar, jugar-hi i veure'l créixer a la teva pantalla d'inici.",
+      "de": "Unsere neueste Kreation, die Kindheitserinnerungen weckt: Schau dir [Brick Pals](https://visnalize.com/brickpals) an – ein kleiner Pixel-Freund zum Umsorgen, Spielen und Großwerden, direkt auf deinem Startbildschirm.",
+      "es": "Nuestra última creación para revivir tus recuerdos de infancia: descubre [Brick Pals](https://visnalize.com/brickpals), un pequeño amigo de píxeles al que cuidar, con el que jugar y verlo crecer en tu pantalla de inicio.",
+      "fa": "تازه‌ترین ساختهٔ ما برای زنده کردن خاطرات کودکی‌تان؛ سری به [Brick Pals](https://visnalize.com/brickpals) بزنید، یک همدم کوچک پیکسلی که از آن مراقبت می‌کنید، با آن بازی می‌کنید و رشدش را روی صفحهٔ اصلی‌تان می‌بینید.",
+      "fr": "Notre toute dernière création pour raviver vos souvenirs d'enfance : découvrez [Brick Pals](https://visnalize.com/brickpals), un petit compagnon en pixels à chouchouter, avec qui jouer et que vous verrez grandir sur votre écran d'accueil.",
+      "hi": "आपके बचपन की यादें लौटाने के लिए हमारी नई पेशकश — देखिए [Brick Pals](https://visnalize.com/brickpals), एक नन्हा पिक्सेल साथी जिसकी देखभाल करें, उसके साथ खेलें और उसे अपनी होम स्क्रीन पर बड़ा होते देखें।",
+      "id": "Karya terbaru kami untuk menghidupkan kembali kenangan masa kecilmu, lihat [Brick Pals](https://visnalize.com/brickpals), teman piksel mungil untuk dirawat, diajak bermain, dan dilihat tumbuh langsung di layar utamamu.",
+      "it": "La nostra ultima creazione per riportare i ricordi d'infanzia: scopri [Brick Pals](https://visnalize.com/brickpals), un piccolo amico di pixel da accudire, con cui giocare e da veder crescere sulla tua schermata iniziale.",
+      "ja": "子どもの頃の思い出がよみがえる最新作、[Brick Pals](https://visnalize.com/brickpals) をチェック。ホーム画面でお世話して、遊んで、成長を見守れる小さなピクセルの相棒です。",
+      "pl": "Nasze najnowsze dzieło, które przywraca wspomnienia z dzieciństwa — sprawdź [Brick Pals](https://visnalize.com/brickpals), małego pikselowego kompana, którym możesz się opiekować, bawić się z nim i patrzeć, jak rośnie na Twoim ekranie głównym.",
+      "pt": "A nossa mais recente criação para trazer de volta as memórias da infância: conheça o [Brick Pals](https://visnalize.com/brickpals), um pequeno amigo de pixels para cuidar, brincar e ver crescer na sua tela inicial.",
+      "ru": "Наша новая разработка, которая вернёт воспоминания детства: загляните в [Brick Pals](https://visnalize.com/brickpals) — крошечного пиксельного друга, за которым можно ухаживать, играть с ним и наблюдать, как он растёт прямо на вашем главном экране.",
+      "th": "ผลงานล่าสุดของเราที่พาคุณย้อนวัยเด็ก ลองดู [Brick Pals](https://visnalize.com/brickpals) เพื่อนพิกเซลตัวจิ๋วที่คุณดูแล เล่นด้วย และเฝ้าดูมันเติบโตบนหน้าจอหลักของคุณ",
+      "tr": "Çocukluk anılarınızı geri getiren en yeni çalışmamız: [Brick Pals](https://visnalize.com/brickpals)'a göz atın; bakımını yapacağınız, birlikte oynayacağınız ve ana ekranınızda büyümesini izleyeceğiniz minik bir piksel dostu.",
+      "uk": "Наша найновіша розробка, що повертає спогади дитинства: завітайте до [Brick Pals](https://visnalize.com/brickpals) — крихітного піксельного друга, про якого можна дбати, гратися з ним і спостерігати, як він росте просто на вашому головному екрані.",
+      "vi": "Sản phẩm mới nhất của chúng tôi gợi lại ký ức tuổi thơ: hãy xem [Brick Pals](https://visnalize.com/brickpals), một người bạn pixel tí hon để bạn chăm sóc, chơi cùng và ngắm nó lớn lên ngay trên màn hình chính.",
+      "zh-CN": "我们的最新作品，带回你的童年回忆。来看看 [Brick Pals](https://visnalize.com/brickpals)，一个小小的像素伙伴，可以照顾它、陪它玩，并在主屏幕上看着它长大。",
+      "zh-TW": "我們的最新作品，喚回你的童年回憶。來看看 [Brick Pals](https://visnalize.com/brickpals)，一隻小小的像素夥伴，可以照顧牠、陪牠玩，並在主畫面上看著牠長大。"
+    },
+    "to": "2026-12-30",
+    "target": {
+      "platform": [
+        "android"
+      ]
+    }
+  },
+  {
     "id": "brick1100-1-6-0",
     "type": "success",
     "title": {
