@@ -1,5 +1,58 @@
 [
   {
+    "id": "win7-simu-supporter",
+    "type": "success",
+    "title": {
+      "en": "Become a Supporter",
+      "ar": "كن داعمًا (Supporter)",
+      "bn": "Supporter হয়ে উঠুন",
+      "ca": "Fes-te Supporter",
+      "de": "Werde Supporter",
+      "es": "Hazte Supporter",
+      "fa": "حامی (Supporter) شوید",
+      "fr": "Devenez Supporter",
+      "hi": "Supporter बनें",
+      "id": "Jadilah Supporter",
+      "it": "Diventa Supporter",
+      "ja": "Supporter になろう",
+      "pl": "Zostań Supporterem",
+      "pt": "Torne-se um Supporter",
+      "ru": "Станьте Supporter",
+      "th": "มาเป็น Supporter",
+      "tr": "Supporter Olun",
+      "uk": "Станьте Supporter",
+      "vi": "Trở thành Supporter",
+      "zh-CN": "成为 Supporter",
+      "zh-TW": "成為 Supporter"
+    },
+    "body": {
+      "en": "Love Win7 Simu? The new Supporter tier gives you everything in Lifetime, plus a private Discord where you can talk to me directly. You can [read more here](https://visnalize.com/blog/win7-simu-supporter).",
+      "ar": "هل تحب Win7 Simu؟ تمنحك فئة Supporter الجديدة كل ما في Lifetime، بالإضافة إلى خادم Discord خاص يمكنك التحدث فيه معي مباشرة. يمكنك [قراءة المزيد هنا](https://visnalize.com/blog/win7-simu-supporter).",
+      "bn": "Win7 Simu ভালো লাগে? নতুন Supporter টিয়ারে Lifetime-এর সবকিছু তো আছেই, সঙ্গে একটি ব্যক্তিগত Discord যেখানে আপনি সরাসরি আমার সঙ্গে কথা বলতে পারবেন। [এখানে আরও পড়ুন](https://visnalize.com/blog/win7-simu-supporter)।",
+      "ca": "T'agrada Win7 Simu? El nou nivell Supporter t'ofereix tot el que inclou Lifetime, a més d'un Discord privat on pots parlar amb mi directament. Pots [llegir-ne més aquí](https://visnalize.com/blog/win7-simu-supporter).",
+      "de": "Gefällt dir Win7 Simu? Die neue Supporter-Stufe bietet alles aus Lifetime und dazu einen privaten Discord, in dem du direkt mit mir sprechen kannst. Du kannst [hier mehr lesen](https://visnalize.com/blog/win7-simu-supporter).",
+      "es": "¿Te gusta Win7 Simu? El nuevo nivel Supporter incluye todo lo de Lifetime, más un Discord privado donde puedes hablar conmigo directamente. Puedes [leer más aquí](https://visnalize.com/blog/win7-simu-supporter).",
+      "fa": "Win7 Simu را دوست دارید؟ سطح جدید Supporter همه‌چیزِ Lifetime را به همراه یک Discord خصوصی به شما می‌دهد که می‌توانید مستقیم با من صحبت کنید. می‌توانید [اینجا بیشتر بخوانید](https://visnalize.com/blog/win7-simu-supporter).",
+      "fr": "Vous aimez Win7 Simu ? La nouvelle formule Supporter inclut tout ce que propose Lifetime, plus un Discord privé où vous pouvez me parler directement. Vous pouvez [en lire plus ici](https://visnalize.com/blog/win7-simu-supporter).",
+      "hi": "Win7 Simu पसंद है? नया Supporter टियर आपको Lifetime की सारी सुविधाएँ देता है, साथ ही एक निजी Discord जहाँ आप मुझसे सीधे बात कर सकते हैं। आप [यहाँ और पढ़ सकते हैं](https://visnalize.com/blog/win7-simu-supporter)।",
+      "id": "Suka Win7 Simu? Tingkat Supporter yang baru memberi Anda semua yang ada di Lifetime, plus Discord privat tempat Anda bisa berbicara langsung dengan saya. Anda bisa [baca selengkapnya di sini](https://visnalize.com/blog/win7-simu-supporter).",
+      "it": "Ti piace Win7 Simu? Il nuovo livello Supporter ti offre tutto ciò che include Lifetime, più un Discord privato dove puoi parlare direttamente con me. Puoi [leggere di più qui](https://visnalize.com/blog/win7-simu-supporter).",
+      "ja": "Win7 Simu を気に入っていますか？新しい Supporter プランでは Lifetime のすべての特典に加えて、私と直接話せるプライベートな Discord に参加できます。[詳しくはこちら](https://visnalize.com/blog/win7-simu-supporter)。",
+      "pl": "Podoba Ci się Win7 Simu? Nowy poziom Supporter daje wszystko, co Lifetime, a do tego prywatny Discord, na którym możesz porozmawiać ze mną bezpośrednio. Możesz [przeczytać więcej tutaj](https://visnalize.com/blog/win7-simu-supporter).",
+      "pt": "Gosta do Win7 Simu? O novo nível Supporter inclui tudo o que há no Lifetime, além de um Discord privado onde você pode falar comigo diretamente. Você pode [ler mais aqui](https://visnalize.com/blog/win7-simu-supporter).",
+      "ru": "Нравится Win7 Simu? Новый уровень Supporter включает всё, что есть в Lifetime, плюс закрытый Discord, где можно пообщаться со мной напрямую. [Подробнее читайте здесь](https://visnalize.com/blog/win7-simu-supporter).",
+      "th": "ชอบ Win7 Simu ไหม? ระดับ Supporter ใหม่ให้ทุกอย่างที่มีใน Lifetime พร้อม Discord ส่วนตัวที่คุณคุยกับผมได้โดยตรง [อ่านเพิ่มเติมได้ที่นี่](https://visnalize.com/blog/win7-simu-supporter)",
+      "tr": "Win7 Simu'yu sevdiniz mi? Yeni Supporter seviyesi, Lifetime'daki her şeyin yanı sıra benimle doğrudan konuşabileceğiniz özel bir Discord sunuyor. [Buradan daha fazlasını okuyabilirsiniz](https://visnalize.com/blog/win7-simu-supporter).",
+      "uk": "Подобається Win7 Simu? Новий рівень Supporter дає все, що є в Lifetime, а ще приватний Discord, де можна поспілкуватися зі мною напряму. [Докладніше читайте тут](https://visnalize.com/blog/win7-simu-supporter).",
+      "vi": "Bạn thích Win7 Simu? Gói Supporter mới mang đến mọi thứ có trong Lifetime, cùng một Discord riêng nơi bạn có thể trò chuyện trực tiếp với mình. Bạn có thể [đọc thêm tại đây](https://visnalize.com/blog/win7-simu-supporter).",
+      "zh-CN": "喜欢 Win7 Simu 吗？全新的 Supporter 等级包含 Lifetime 的所有内容，还有一个私人 Discord，你可以在那里直接和我交流。[点此了解更多](https://visnalize.com/blog/win7-simu-supporter)。",
+      "zh-TW": "喜歡 Win7 Simu 嗎？全新的 Supporter 等級包含 Lifetime 的所有內容，還有私人 Discord，你可以在那裡直接和我交流。[點此了解更多](https://visnalize.com/blog/win7-simu-supporter)。"
+    },
+    "target": {
+      "minVersion": "4.8.1"
+    }
+  },
+  {
     "id": "brick-pals-intro",
     "type": "success",
     "title": {
